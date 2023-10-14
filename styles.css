@@ -1,0 +1,769 @@
+:root {
+    --green-800: #0A7B04;
+    --green-700: #1E8C14;
+    --green-600: #2D9E21;
+    --green-500: #37AD2A;
+    --green-400: #58B94E;
+    --ggs: 1.8;
+
+  scroll-behavior: smooth;
+
+  }
+
+  /* THE TOP AND RIGHT BORDERS ARE WHATS CAUSING THE X OVERFLOW IN TEH BODYS 
+  I dont think its the scrooll bar because theres no issue with jiust left border
+  
+  its the top right bit of the top border
+  and all of the right hand border
+
+  anything that extends right is extending outside of the body
+  but not being hidden
+
+  SETTING RIGHT: 0PX SEEMS TO FIX EVERYTHING?? 
+
+  ->>> so i just need to clip all the images appropriately
+  **/
+body {
+  background-color: #fffffa;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-border {
+  position: relative;
+  width: 100%;
+}
+
+.top-left-corner {
+  width: 50px;
+  position: absolute;
+  top: -2px;
+  left: 0px;
+}
+
+.top-left-vine {
+  width: 170px;
+  position: absolute;
+  top: -5px;
+  left: 0px;
+}
+
+.top-two-leaves {
+  display: none;
+}
+
+.top-bunch {
+  width: 90px;
+  position: absolute;
+  top: -3px;
+  left: 150px;
+}
+
+.top-right-corner {
+  width: 150px;
+  position: absolute;
+  top: -3px;
+  right: 0px;
+}
+
+.top-extra-1 {
+  display: none;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 960px) {
+    .top-two-leaves {
+    display: block;
+        position: absolute;
+        width: 30px;
+        top: -3px;
+        left: 230px;
+      }
+      
+  }
+  
+@media only screen and (min-width: 460px) and (max-width: 960px) {
+  .top-extra-1 {
+    display: block;
+    position: absolute;
+    width: 40px;
+    top: -3px;
+    right: 160px;
+  }
+}
+
+
+.left-border {
+    position: absolute;
+    top: 150px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.leftBunch {
+    width: 40px;
+}
+
+.leftVine {
+    position: absolute;
+    width: 40px;
+    top: 50px;
+    left: 0px
+}
+
+.leftMulti {
+    position: absolute;
+    width: 60px;
+    top: 120px;
+    left: 0px;
+}
+
+.leaf1 {
+    position: absolute;
+    width: 20px;
+    top: 610px;
+    left: 0px;
+    transform: rotate(180deg);
+}
+
+.pair1 {
+    position: absolute;
+    width: 40px;
+    top: 630px;
+    left: 0px;
+    transform: rotate(180deg);
+}
+
+.leaf2 {
+    position: absolute;
+    width: 50px;
+    top: 720px;
+    left: 0px;
+    transform: rotate(180deg);
+}
+
+.bunch2 {
+    position: absolute;
+    width: 50px;
+    top: 760px;
+    left: 0px;
+    transform: rotate(180deg);
+}
+
+.topBunchLeft {
+    position: absolute;
+    width: 90px;
+    top: 820px;
+    left: -13px;
+    transform: rotate(270deg);
+}
+
+.bunch3Left {
+    position: absolute;
+    width: 40px;
+    top: 900px;
+    left: -13px;
+    transform: rotate(180deg);
+}
+
+.vine1Left {
+    position: absolute;
+    width: 50px;
+    top: 1000px;
+    left: 0px;
+    transform: rotate(180deg);
+}
+
+.bunch1Left {
+    position: absolute;
+    width: 50px;
+    top: 1050px;
+    left: 0px;
+    transform: rotate(180deg);
+}
+
+.bunch5LeftAgain {
+    position: absolute;
+    width: 50px;
+    top: 1150px;
+    left: 0px;
+}
+
+.rightMultiOnLeft {
+    position: absolute;
+    width: 105px;
+    top: 1250px;
+    left: 0px;
+    transform: rotate(180deg);
+}
+
+.vine3Left {
+    position: absolute;
+    width: 40px;
+    top: 1900px;
+    left: 0px;
+}
+
+.bunch4Left2 {
+    position: absolute;
+    width: 50px;
+    top: 2000px;
+    left: 0px;
+}
+
+.bunch2Again {
+    position: absolute;
+    width: 50px;
+    top: 2150px;
+    left: 0px;
+    transform: rotate(180deg);
+}
+
+.leftBunch2 {
+    position: absolute;
+    width: 50px;
+    top: 2230px;
+    left: 0px;
+}
+
+/* Right Border */
+
+.right-border {
+    position: absolute;
+    top: 130px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rightMulti {
+    position: absolute;
+    width: 100px;
+    right: 0px;
+}
+
+.bunch4Right {
+    position: absolute;
+    width: 50px;
+    top: 660px;
+    right: 0px;
+    transform: rotate(180deg);
+}
+
+.leaf3Right {
+    position: absolute;
+    width: 30px;
+    top: 820px;
+    right: 0px;
+}
+
+.vine3Right {
+    position: absolute;
+    width: 50px;
+    top: 880px;
+    right: 0px;
+    transform: rotate(180deg);
+}
+
+.bunch5Right {
+    position: absolute;
+    width: 45px;
+    top: 990px;
+    right: 0px;
+    transform: rotate(180deg);
+}
+
+.leaf1Right {
+    position: absolute;
+    width: 40px;
+    top: 1070px;
+    right: 0px;
+}
+
+.pair1Right {
+    position: absolute;
+    width: 40px;
+    top: 1110px;
+    right: 0px;
+}
+
+.vine2Right {
+    position: absolute;
+    width: 40px;
+    top: 1200px;
+    right: 0px;
+    transform: rotate(180deg);
+}
+
+.topBunchRight {
+    position: absolute;
+    width: 70px;
+    top: 1260px;
+    right: -10px;
+    transform: rotate(90deg);
+}
+
+.bunch2Right {
+    position: absolute;
+    width: 40px;
+    top: 1320px;
+    right: 0px;
+}
+
+.bunch1Right {
+    position: absolute;
+    width: 40px;
+    top: 1380px;
+    right: 0px;
+}
+
+.leaf2Right {
+    position: absolute;
+    width: 40px;
+    top: 1470px;
+    right: 0px;
+}
+
+.vine3Right2 {
+    position: absolute;
+    width: 40px;
+    top: 1520px;
+    right: 0px;
+    transform: rotate(180deg);
+    transform: scaleX(-1);
+}
+
+.bunch4Right2 {
+    position: absolute;
+    width: 50px;
+    top: 1620px;
+    right: 0px;
+    transform: scaleX(-1);
+}
+
+.leaf1Right2 {
+    position: absolute;
+    width: 40px;
+    top: 1760px;
+    right: 0px;
+}
+
+.leaf3Right2 {
+    position: absolute;
+    width: 30px;
+    top: 1800px;
+    right: 0px;
+}
+
+.leftBunchRight {
+    position: absolute;
+    width: 45px;
+    top: 1850px;
+    right: 0px;
+    transform: scaleX(-1);
+}
+
+.bunch5Right2 {
+    position: absolute;
+    width: 45px;
+    top: 1920px;
+    right: 0px;
+    transform: scaleX(-1);
+}
+
+.vine1Right {
+    position: absolute;
+    width: 45px;
+    top: 2000px;
+    right: 0px;
+}
+
+/* Content */
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 60px;
+}
+
+/* Center */
+
+.lettersContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.letterB, .letterG {
+    width: 140px;
+    margin: 20px 0px;
+}
+
+.ampersand {
+    width: 40px;
+    margin: 5px 0px;
+}
+
+.chevron {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--green-700);
+    margin-top: 30px;
+}
+
+.gg-chevron-down {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 22px;
+    height: 22px;
+    border: 2px solid transparent;
+    border-radius: 100px
+}
+.gg-chevron-down::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+    transform: rotate(45deg);
+    left: 4px;
+    top: 2px
+}
+
+/* All Content */
+
+h2, h2, h3, h4, p {
+    font-family: 'Inter', 'serif';
+    margin: 0;
+}
+
+h2 {
+    color: var(--green-700);
+}
+
+h3 {
+    color: var(--green-700);
+}
+
+h4 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 14px;
+    color: var(--green-500);
+    font-weight: 100;
+}
+
+.content-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* Wedding Section */
+
+.wedding {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.title-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    color: var(--green-700);
+}
+
+.title-section h2 {
+    font-family: 'Tangerine', serif;
+    font-size: 42px;
+    font-weight: 100;
+}
+
+.title-section h3 {
+    font-family: 'Tangerine', serif;
+    font-size: 32px;
+    font-weight: 100;
+}
+
+.agenda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--green-600);
+    margin-top: 20px;
+}
+
+.day {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.agenda h4, p {
+    padding: 2px 0;
+}
+
+.getting-there {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.getting-there-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-top: 10px;
+}
+
+.getting-there-text p {
+    padding: 6px 0;
+    margin-bottom: 5px;
+}
+
+
+.our-story {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.trailer {
+    margin-top: 10px;
+}
+
+.FAQs {
+    margin-bottom: 80px;
+}
+
+.questions {
+    margin-top: 10px;
+}
+
+.q-and-a {
+    padding: 8px 0;
+}
+/* Navigation */
+
+
+ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+ 
+
+/*=============== HEADER ===============*/
+.header {
+    --container-color: rgba(255, 255, 255, 1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--container-color);
+    z-index: var(--z-fixed);
+    transition: .4s;
+  }
+  
+  /*=============== NAV ===============*/
+  .nav {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  @media screen and (max-width: 767px) {
+    .nav__menu {
+      position: fixed;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: var(--container-color);
+      box-shadow: 0 -1px 6px hsla(174, 63%, 15%, 1);
+      width: 70%;
+      padding: 0;
+      /*display: grid;*/
+      opacity: 0;
+      align-content: center;
+      border-radius: 1.25rem 1.25rem 0 0;
+      z-index: 9999;
+    }
+  }
+  .nav-active {
+    opacity: 1;
+    filter: blur(0);
+    transition: filter .5s;
+    transition: opacity .5s;
+    /*transform: translateY(0px);*/
+  }
+
+  .nav-inactive {
+    transition: filter .5s;
+    transition: opacity .5s;
+    opacity: 0;
+    filter: blur(5px);
+   /* transform: translateY(-100px); */
+
+  }
+  
+  .nav__img {
+    width: 32px;
+    border-radius: 50%;
+  }
+  
+  .nav__logo {
+    color: var(--title-color);
+    font-weight: 600;
+  }
+  
+
+  
+  .nav__list, 
+  .nav__link {
+    display: flex;
+  }
+  
+  .nav__link {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 4px;
+    color: var(--title-color);
+    font-weight: 600;
+  }
+  
+  .nav__list {
+    justify-content: space-around;
+    padding: 0;
+  }
+  
+  .nav__name {
+    font-size: var(--tiny-font-size);
+    /* display: none;*/ /* Minimalist design, hidden labels */
+  }
+  
+  .nav__icon {
+    font-size: 1.5rem;
+  }
+  
+  /*Active link*/
+  .active-link {
+    position: relative;
+    color: var(--first-color);
+    transition: .3s;
+  }
+  
+  /* Minimalist design, active link */
+  /* .active-link::before{
+    content: '';
+    position: absolute;
+    bottom: -.5rem;
+    width: 4px;
+    height: 4px;
+    background-color: var(--first-color);
+    border-radius: 50%;
+  } */
+  
+  /* Change background header */
+  .scroll-header {
+    box-shadow: 0 1px 12px hsla(var(--hue), var(--sat), 15%, 0.15);
+  }
+  
+
+/*=============== MEDIA QUERIES ===============*/
+/* For small devices */
+/* Remove if you choose, the minimalist design */
+@media screen and (max-width: 500px) {
+    .nav__name {
+      display: none;
+    }
+  }
+  
+  /* For medium devices */
+  @media screen and (min-width: 576px) {
+    .nav__list {
+      justify-content: center;
+      column-gap: 3rem;
+    }
+  }
+  
+  @media screen and (min-width: 767px) {
+    body {
+      margin: 0;
+    }
+    .section {
+      padding: 7rem 0 2rem;
+    }
+    .nav {
+      height: calc(var(--header-height) + 1.5rem); /* 4.5rem */
+    }
+    .nav__img {
+      display: none;
+    }
+    .nav__icon {
+      display: none;
+    }
+    .nav__name {
+      font-size: var(--normal-font-size);
+      /* display: block; */ /* Minimalist design, visible labels */
+    }
+    .nav__link:hover {
+      color: var(--first-color);
+    }
+  
+    /* First design, remove if you choose the minimalist design */
+    .active-link::before {
+      content: '';
+      position: absolute;
+      bottom: -.75rem;
+      width: 4px;
+      height: 4px;
+      background-color: var(--first-color);
+      border-radius: 50%;
+    }
+  
+    /* Minimalist design */
+    /* .active-link::before{
+        bottom: -.75rem;
+    } */
+  }
+  
+  /* For large devices */
+  @media screen and (min-width: 1024px) {
+    .container {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
