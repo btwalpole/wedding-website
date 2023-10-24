@@ -1,9 +1,12 @@
 :root {
+  --green-dark: #033500;
     --green-800: #0A7B04;
     --green-700: #1E8C14;
     --green-600: #2D9E21;
     --green-500: #37AD2A;
     --green-400: #58B94E;
+    --green-100: #daf9d6;
+    --background-cream: #fffffa;
     --ggs: 1.8;
 
   scroll-behavior: smooth;
@@ -24,7 +27,7 @@
   ->>> so i just need to clip all the images appropriately
   **/
 body {
-  background-color: #fffffa;
+  background-color: var(----background-cream);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -69,11 +72,11 @@ body {
   right: 0px;
 }
 
-.top-extra-1 {
+.top-extra-1, .top-leaf-1, .top-bunch-2, .top-bunch-3, .top-vine-3, .top-pair-1, .top-leaf-3, .top-leaf-2, .top-vine-2, .top-bunch-1, .top-leaf-1-2, .top-leftBunch-1, .top-bunch-5, .top-bunch-4 {
   display: none;
 }
 
-@media only screen and (min-width: 400px) and (max-width: 960px) {
+@media only screen and (min-width: 400px) {
     .top-two-leaves {
     display: block;
         position: absolute;
@@ -84,7 +87,7 @@ body {
       
   }
   
-@media only screen and (min-width: 460px) and (max-width: 960px) {
+@media only screen and (min-width: 460px){
   .top-extra-1 {
     display: block;
     position: absolute;
@@ -93,6 +96,152 @@ body {
     right: 160px;
   }
 }
+
+  
+@media only screen and (min-width: 500px){
+  .top-leaf-1 {
+    display: block;
+    position: absolute;
+    width: 40px;
+    top: -3px;
+    right: 200px;
+    transform: rotate(270deg);
+  }
+}
+
+@media only screen and (min-width: 560px){
+  .top-bunch-2{
+    display: block;
+    position: absolute;
+    width: 40px;
+    top: -3px;
+    right: 250px;
+    transform: rotate(270deg);
+  }
+}
+
+@media only screen and (min-width: 670px){
+  .top-bunch-3{
+    display: block;
+    position: absolute;
+    width: 40px;
+    top: -35px;
+    right: 340px;
+    transform: rotate(270deg);
+  }
+}
+
+@media only screen and (min-width: 800px){
+  .top-vine-3{
+    display: block;
+    position: absolute;
+    width: 40px;
+    top: -20px;
+    right: 450px;
+    transform: rotate(90deg);
+  }
+}
+
+@media only screen and (min-width: 880px){
+  .top-pair-1{
+    display: block;
+    position: absolute;
+    width: 55px;
+    top: -25px;
+    right: 550px;
+    transform: rotate(270deg);
+  }
+}
+
+@media only screen and (min-width: 940px){
+  .top-leaf-3{
+    display: block;
+    position: absolute;
+    width: 45px;
+    top: -20px;
+    right: 650px;
+    transform: rotate(270deg);
+  }
+}
+
+@media only screen and (min-width: 970px){
+  .top-leaf-2{
+    display: block;
+    position: absolute;
+    width: 55px;
+    top: -3px;
+    right: 720px;
+    transform: rotate(270deg);
+  }
+}
+
+@media only screen and (min-width: 1100px){
+  .top-vine-2{
+    display: block;
+    position: absolute;
+    width: 55px;
+    top: -3px;
+    right: 770px;
+    transform: rotate(90deg);
+  }
+}
+
+@media only screen and (min-width: 1230px){
+  .top-bunch-1{
+    display: block;
+    position: absolute;
+    width: 70px;
+    top: -35px;
+    right: 870px;
+    transform: rotate(270deg);
+  }
+}
+
+@media only screen and (min-width: 1300px){
+  .top-leaf-1-2{
+    display: block;
+    position: absolute;
+    width: 50px;
+    top: -3px;
+    right: 980px;
+    transform: rotate(270deg);
+  }
+}
+
+@media only screen and (min-width: 1360px){
+  .top-leftBunch-1{
+    display: block;
+    position: absolute;
+    width: 60px;
+    top: -3px;
+    right: 1040px;
+    transform: rotate(90deg);
+  }
+}
+
+
+@media only screen and (min-width: 1400px){
+  .top-bunch-5{
+    display: block;
+    position: absolute;
+    width: 40px;
+    top: -15px;
+    right: 1130px;
+    transform: rotate(90deg);
+  }
+}
+
+@media only screen and (min-width: 1650px){
+  .top-bunch-4{
+    display: block;
+    position: absolute;
+    width: 50px;
+    top: -45px;
+    right: 1250px;
+    transform: rotate(90deg);
+  }
+}
+
 
 
 .left-border {
@@ -194,7 +343,7 @@ body {
 
 .rightMultiOnLeft {
     position: absolute;
-    width: 105px;
+    width: 90px;
     top: 1250px;
     left: 0px;
     transform: rotate(180deg);
@@ -381,6 +530,28 @@ body {
     right: 0px;
 }
 
+.pair1Right2 {
+  position: absolute;
+  width: 45px;
+  top: 2050px;
+  right: 0px;
+}
+
+.bunch1Right2 {
+  position: absolute;
+  width: 55px;
+  top: 2150px;
+  right: 0px;
+}
+
+.topBunchRight2 {
+  position: absolute;
+  width: 70px;
+  top: 2300px;
+  right: -10px;
+  transform: rotate(90deg);
+}
+
 /* Content */
 
 .content-container {
@@ -393,6 +564,14 @@ body {
 
 /* Center */
 
+.landingScreen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .lettersContainer {
     display: flex;
     flex-direction: column;
@@ -401,9 +580,14 @@ body {
     margin-top: 70px;
 }
 
-.letterB, .letterG {
-    width: 140px;
+.letterB {
+    width: 160px;
     margin: 20px 0px;
+}
+
+.letterG {
+  width: 140px;
+  margin: 20px 0px;
 }
 
 .ampersand {
@@ -411,12 +595,55 @@ body {
     margin: 5px 0px;
 }
 
+@media screen and (min-width: 680px) {
+  .lettersContainer {
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    justify-content: space-around;
+    flex: 1 0 0;
+  }
+  .letterB, .letterG {
+    width: 240px;
+  }
+
+  .letterG {
+    margin-top: 100px;
+  }
+
+  .ampersand {
+    width: 80px;
+  }
+}
+
+@media screen and (min-width: 680px) and (max-width: 900px){
+
+  .letterB, .letterG {
+    width: 200px;
+  }
+
+  .letterG {
+    margin-top: 100px;
+  }
+
+  .ampersand {
+    width: 60px;
+  }
+}
+
 .chevron {
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--green-700);
-    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.chevron:hover {
+  background-color: var(--green-100);
+  cursor: pointer;
 }
 
 .gg-chevron-down {
@@ -445,8 +672,8 @@ body {
 
 /* All Content */
 
-h2, h2, h3, h4, p {
-    font-family: 'Inter', 'serif';
+h2, h2, h3, h4, p, span {
+    font-family: 'Alegreya', 'serif';
     margin: 0;
 }
 
@@ -464,7 +691,7 @@ h4 {
 
 p {
     font-size: 14px;
-    color: var(--green-500);
+    color: var(--green-dark);
     font-weight: 100;
 }
 
@@ -483,7 +710,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
 .title-section {
@@ -491,8 +718,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
-    color: var(--green-700);
+    margin-top: 30px;
 }
 
 .title-section h2 {
@@ -503,8 +729,9 @@ p {
 
 .title-section h3 {
     font-family: 'Tangerine', serif;
-    font-size: 32px;
+    font-size: 36px;
     font-weight: 100;
+    color: var(--green-dark);
 }
 
 .agenda {
@@ -528,6 +755,32 @@ p {
     padding: 2px 0;
 }
 
+.vineDivider {
+  width: 150px;
+  margin: 60px 0 40px 0;
+}
+
+.vineDivider-2 {
+  width: 150px;
+  margin: 60px 0 40px 0;
+  transform: scaleX(-1);
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .vineDivider, .vineDivider-2 {
+    width: 200px;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 960px) {
+  .vineDivider, .vineDivider-2 {
+    width: 300px;
+  }
+}
+
+
 .getting-there {
     display: flex;
     flex-direction: column;
@@ -549,13 +802,13 @@ p {
     margin-bottom: 5px;
 }
 
-
 .our-story {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 30px;
+    padding-bottom: 20px;
 }
 
 .trailer {
@@ -564,6 +817,7 @@ p {
 
 .FAQs {
     margin-bottom: 80px;
+    padding-top: 30px;
 }
 
 .questions {
@@ -588,14 +842,16 @@ ul {
 
 /*=============== HEADER ===============*/
 .header {
-    --container-color: rgba(255, 255, 255, 1);
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: var(--container-color);
+    background-color: var(--background-cream);
     z-index: var(--z-fixed);
     transition: .4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   /*=============== NAV ===============*/
@@ -605,13 +861,12 @@ ul {
     justify-content: space-between;
     align-items: center;
   }
-  @media screen and (max-width: 767px) {
     .nav__menu {
       position: fixed;
       bottom: 0;
       left: 50%;
       transform: translateX(-50%);
-      background-color: var(--container-color);
+      background-color: var(--background-cream);
       box-shadow: 0 -1px 6px hsla(174, 63%, 15%, 1);
       width: 70%;
       padding: 0;
@@ -620,8 +875,20 @@ ul {
       align-content: center;
       border-radius: 1.25rem 1.25rem 0 0;
       z-index: 9999;
+      color: var(--green-dark);
+    }
+
+  @media screen and (min-width: 767px) {
+    .nav__menu {
+      width: auto;
+      padding: 0 40px;
+    }
+    .nav__menu i {
+      display: none;
     }
   }
+  
+
   .nav-active {
     opacity: 1;
     filter: blur(0);
@@ -631,12 +898,12 @@ ul {
   }
 
   .nav-inactive {
-    transition: filter .5s;
-    transition: opacity .5s;
     opacity: 0;
     filter: blur(5px);
+    transition: filter .5s;
+    transition: opacity .5s;
+    pointer-events: none;
    /* transform: translateY(-100px); */
-
   }
   
   .nav__img {
@@ -648,8 +915,6 @@ ul {
     color: var(--title-color);
     font-weight: 600;
   }
-  
-
   
   .nav__list, 
   .nav__link {

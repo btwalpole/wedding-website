@@ -33,3 +33,8 @@ function scrollToSectionById(id) {
   const section = document.getElementById(id);
   section.scrollIntoView();
 }
+
+function scrollToWedding() {
+  const section = document.getElementById("wedding");
+  section.scrollIntoView();
+}

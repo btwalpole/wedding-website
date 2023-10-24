@@ -7,12 +7,15 @@
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Tangerine">
           <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Inter">
-    <link rel="shortcut icon" href="images/favicon.ico" />
+          href="https://fonts.googleapis.com/css?family=Alegreya">
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/chevron-down.css' rel='stylesheet'>
       <!--=============== BOXICONS ===============-->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <meta
+      <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+      <link rel="manifest" href="images/site.webmanifest">
+      <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
     />
@@ -24,6 +27,19 @@
         <img class="top-two-leaves" src="images/topTwoLeaves.png" alt="topTwoLeaves" />
         <img class="top-bunch" src="images/topBunch.png" alt="topBunch" />
         <img class="top-extra-1" src="images/topExtra1.png" alt="topExtra1" />
+        <img class="top-leaf-1" src="images/leaf1.png" alt="top-leaf-1" />
+        <img class="top-bunch-2" src="images/bunch2.png" alt="top-bunch-2" />
+        <img class="top-bunch-3" src="images/bunch3.png" alt="top-bunch-3" />
+        <img class="top-vine-3" src="images/vine3.png" alt="top-vine-3" />
+        <img class="top-pair-1" src="images/pair1.png" alt="top-pair-1" />
+        <img class="top-leaf-3" src="images/leaf3.png" alt="top-leaf-3" />
+        <img class="top-leaf-2" src="images/leaf2.png" alt="top-leaf-2" />
+        <img class="top-vine-2" src="images/vine2.png" alt="top-vine-2" />
+        <img class="top-bunch-1" src="images/bunch1.png" alt="top-bunch-1" />
+        <img class="top-leaf-1-2" src="images/leaf1.png" alt="top-leaf-1-2" />
+        <img class="top-leftBunch-1" src="images/leftBunch.png" alt="top-leftBunch-1" />
+        <img class="top-bunch-5" src="images/bunch5.png" alt="top-bunch-5" />
+        <img class="top-bunch-4" src="images/bunch4.png" alt="top-bunch-4" />
         <img class="top-right-corner" src="images/topRightCorner.png" alt="topRightCorner" />
     </div>
     <div class="left-border">
@@ -64,26 +80,30 @@
       <img class="leaf1Right2" src="images/leaf1.png" alt="leaf1Right2" />
       <img class="leaf3Right2" src="images/leaf3.png" alt="leaf3Right2" />
       <img class="leftBunchRight" src="images/leftBunch.png" alt="leftBunchRight" />
-      
       <img class="bunch5Right2" src="images/bunch5.png" alt="bunch5Right2" />
       <img class="vine1Right" src="images/vine1.png" alt="vine1Right" />
+      <img class="pair1Right2" src="images/pair1.png" alt="pair1Right2" />
+      <img class="bunch1Right2" src="images/bunch1.png" alt="bunch1Right2" />
+      <img class="topBunchRight2" src="images/topBunch.png" alt="topBunchRight2" />
 
     </div>
     <div class="content-container">
-      <div class="lettersContainer">
-        <img class="letterB" src="images/B.png" alt="letterB" />
-        <img class="ampersand" src="images/Ampersand.png" alt="ampersand" />
-        <img class="letterG" src="images/G.png" alt="letterG" />
+      <div class="landingScreen">
+        <div class="lettersContainer">
+          <img class="letterB" src="images/B.png" alt="letterB" />
+          <img class="ampersand" src="images/Ampersand.png" alt="ampersand" />
+          <img class="letterG" src="images/G.png" alt="letterG" />
+        </div>
+        <div class="chevron">
+        <i class="gg-chevron-down" onclick="scrollToWedding()"></i>
+        </div>
       </div>
-      <div class="chevron">
-      <i class="gg-chevron-down" onclick="scrollToSectionById(`wedding`)"></i>
-      </div>
-  
+      
       <div class="wedding" id="wedding">
         <h2>The Wedding</h2>
         <div class="title-section">
           <h3>September 6th - 8th 2024</h3>
-          <h3>Chateau Saint-Michel</h3>
+          <h3>Château Saint-Michel</h3>
           <h3>Saint-Girons, France</h3>
         </div>
         <div class="agenda">
@@ -103,7 +123,7 @@
           </div>
         </div>
       </div>
-
+      <img class="vineDivider" src="images/vineDivider.png" alt="vineDivider" />
       <div class="getting-there" id="getting-there">
           <h2>Getting There</h2>
           <div class="getting-there-text">
@@ -112,20 +132,20 @@
             <p>Saint-Girons is a 10 minute drive, a small town with more options for accommodation and dinner.</p>
             <p>See below for the venue location, alongside some accommodation and dining recommendations.</p>
           </div>
-            <iframe class="map" src="https://www.google.com/maps/d/embed?mid=1VErDThy82rWlc5-WW3UVyZ_k6lv8Rj4&ehbc=2E312F&noprof=1" height="300px" width="95%"></iframe>
+            <iframe class="map" src="https://www.google.com/maps/d/embed?mid=1VErDThy82rWlc5-WW3UVyZ_k6lv8Rj4&ehbc=2E312F&noprof=1" height="300px" width="100%"></iframe>
       </div>
-
+      <img class="vineDivider-2" src="images/vineDivider.png" alt="vineDivider" />
       <div class="our-story" id="our-story">
         <h2>Our Story</h2>
-        <video controls width="100%" class="trailer" poster="images/poster.png">
+        <video controls width="80%" class="trailer" poster="images/poster.png">
           <source src="video/trailer.mp4" type="video/mp4" />
           <p>
             Your browser doesn't support this video.
           </p>
         </video>
       </div>
-
-      <div class="content-section FAQs" id="FAQs">
+      <img class="vineDivider" src="images/vineDivider.png" alt="vineDivider" />
+      <div class="FAQs" id="FAQs">
         <h2>FAQs</h2>
         <div class="questions">
           <div class="q-and-a">
@@ -151,12 +171,9 @@
         </div>
       </div>
     </div>
-    
 
     <header class="header" id="header">
       <nav class="nav container">
-          <a href="#" class="nav__logo">Marlon</a>
-
           <div class="nav__menu" id="nav-menu">
               <ul class="nav__list">
                   <li class="nav__item">
