@@ -612,6 +612,12 @@ body {
   margin-bottom: 80px;
 }
 
+@media screen and (min-width: 600px) {
+  .landingScreen {
+    height: 100vh;
+  }  
+}
+
 .lettersContainer {
     display: flex;
     flex-direction: column;
