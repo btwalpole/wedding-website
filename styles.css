@@ -26,6 +26,16 @@
 
   ->>> so i just need to clip all the images appropriately
   **/
+
+/* * {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+} */
+
+html {
+  overflow-x: hidden;
+}
 body {
   background-color: var(----background-cream);
   margin: 0;
@@ -33,6 +43,9 @@ body {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
 }
 
 .top-border {
@@ -349,6 +362,14 @@ body {
     transform: rotate(180deg);
 }
 
+.topBunchLeft2 {
+  position: absolute;
+  width: 90px;
+  top: 1800px;
+  left: -13px;
+  transform: rotate(270deg);
+}
+
 .vine3Left {
     position: absolute;
     width: 40px;
@@ -378,12 +399,21 @@ body {
     left: 0px;
 }
 
+.rightMultiOnLeft2 {
+  position: absolute;
+  width: 70px;
+  top: 2320px;
+  left: 0px;
+  transform: rotate(180deg);
+}
+
+
 /* Right Border */
 
 .right-border {
     position: absolute;
     top: 130px;
-    right: 0px;
+    right: -1px;
     display: flex;
     flex-direction: column;
 }
@@ -552,6 +582,15 @@ body {
   transform: rotate(90deg);
 }
 
+.leftMultiRight {
+  position: absolute;
+  width: 50px;
+  top: 2360px;
+  right: 0px;
+  transform: rotate(180deg);
+
+}
+
 /* Content */
 
 .content-container {
@@ -646,6 +685,11 @@ body {
   cursor: pointer;
 }
 
+.chevron a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
 .gg-chevron-down {
     box-sizing: border-box;
     position: relative;
@@ -654,7 +698,7 @@ body {
     width: 22px;
     height: 22px;
     border: 2px solid transparent;
-    border-radius: 100px
+    border-radius: 100px;
 }
 .gg-chevron-down::after {
     content: "";
@@ -667,12 +711,12 @@ body {
     border-right: 2px solid;
     transform: rotate(45deg);
     left: 4px;
-    top: 2px
+    top: 2px;
 }
 
 /* All Content */
 
-h2, h2, h3, h4, p, span {
+h2, h3, h4, p, span {
     font-family: 'Alegreya', 'serif';
     margin: 0;
 }
@@ -693,6 +737,36 @@ p {
     font-size: 14px;
     color: var(--green-dark);
     font-weight: 100;
+}
+
+.title-section h3 {
+  font-family: 'Tangerine', serif;
+  font-size: 36px;
+  font-weight: 100;
+  color: var(--green-dark);
+}
+
+/* Tablet & Desktop text Styles */
+@media only screen and (min-width: 401px) {
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+ 
+  h4 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .title-section h3 {
+      font-size: 44px;
+  }
 }
 
 .content-section {
@@ -723,15 +797,7 @@ p {
 
 .title-section h2 {
     font-family: 'Tangerine', serif;
-    font-size: 42px;
     font-weight: 100;
-}
-
-.title-section h3 {
-    font-family: 'Tangerine', serif;
-    font-size: 36px;
-    font-weight: 100;
-    color: var(--green-dark);
 }
 
 .agenda {
@@ -767,7 +833,7 @@ p {
 }
 
 /* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
+@media only screen and (min-width: 500px) and (max-width: 960px) {
   .vineDivider, .vineDivider-2 {
     width: 200px;
   }
@@ -779,7 +845,6 @@ p {
     width: 300px;
   }
 }
-
 
 .getting-there {
     display: flex;
@@ -802,6 +867,20 @@ p {
     margin-bottom: 5px;
 }
 
+.map {
+  height: 300px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 500px) {
+  .map {
+    height: 500px;
+    width: 70%;
+  }
+}
+
 .our-story {
     display: flex;
     flex-direction: column;
@@ -818,6 +897,9 @@ p {
 .FAQs {
     margin-bottom: 80px;
     padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .questions {
@@ -829,7 +911,6 @@ p {
 }
 /* Navigation */
 
-
 ul {
     list-style: none;
   }
@@ -837,8 +918,6 @@ ul {
   a {
     text-decoration: none;
   }
-
- 
 
 /*=============== HEADER ===============*/
 .header {
@@ -944,11 +1023,15 @@ ul {
   }
   
   /*Active link*/
-  .active-link {
-    position: relative;
-    color: var(--first-color);
-    transition: .3s;
+  .active-link, .nav__item:hover {
+    color: var(--green-800);
   }
+
+  /* .active-link {
+    position: relative;
+    color: var(--green-700);
+    transition: .3s;
+  } */
   
   /* Minimalist design, active link */
   /* .active-link::before{
@@ -967,24 +1050,35 @@ ul {
   }
   
 
+  @media screen and (min-width: 766px) and (max-width: 900px) {
+    .nav__list {
+      padding: 0 20px;
+    }
+    
+  }
+ 
 /*=============== MEDIA QUERIES ===============*/
 /* For small devices */
 /* Remove if you choose, the minimalist design */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 767px) {
     .nav__name {
       display: none;
     }
   }
   
-  /* For medium devices */
-  @media screen and (min-width: 576px) {
+  /* For medium devices *//*
+  @media screen and (min-width: 590px) {
     .nav__list {
       justify-content: center;
       column-gap: 3rem;
     }
-  }
+  }*/
   
   @media screen and (min-width: 767px) {
+    .nav__list {
+      justify-content: center;
+      column-gap: 3rem;
+    }
     body {
       margin: 0;
     }
@@ -993,6 +1087,14 @@ ul {
     }
     .nav {
       height: calc(var(--header-height) + 1.5rem); /* 4.5rem */
+    }
+    .nav__menu {
+      min-width: fit-content;
+    }
+    .nav__item {
+      min-width: fit-content;
+      display: flex;
+      align-items: center;
     }
     .nav__img {
       display: none;

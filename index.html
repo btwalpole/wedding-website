@@ -50,17 +50,18 @@
       <img class="pair1" src="images/pair1.png" alt="pair1" />
       <img class="leaf2" src="images/leaf2.png" alt="leaf2" />
       <img class="bunch2" src="images/bunch2.png" alt="bunch2" />
-      <img class="topBunchLeft" src="images/topBunch.png" alt="topBunch" />
+      <img class="topBunchLeft" src="images/topBunch.png" alt="topBunchLeft" />
       <img class="bunch3Left" src="images/bunch3.png" alt="bunch3Left" />
       <img class="vine1Left" src="images/vine1.png" alt="vine1Left" />
       <img class="bunch1Left" src="images/bunch1.png" alt="bunch1Left" />
       <img class="bunch5LeftAgain" src="images/bunch5.png" alt="bunch5LeftAgain" />
       <img class="rightMultiOnLeft" src="images/rightMulti.png" alt="rightMultiOnLeft" />
+      <img class="topBunchLeft2" src="images/topBunch.png" alt="topBunchLeft2" />
       <img class="vine3Left" src="images/vine3.png" alt="vine3Left" />
       <img class="bunch4Left2" src="images/bunch4.png" alt="bunch4Left2" />
       <img class="bunch2Again" src="images/bunch2.png" alt="bunch2Again" />
       <img class="leftBunch2" src="images/leftBunch.png" alt="leftBunch2" />
-
+      <img class="rightMultiOnLeft2" src="images/rightMulti.png" alt="rightMultiOnLeft2" />
     </div>
     <div class="right-border">
       <img class="rightMulti" src="images/rightMulti.png" alt="rightMulti" />
@@ -85,7 +86,7 @@
       <img class="pair1Right2" src="images/pair1.png" alt="pair1Right2" />
       <img class="bunch1Right2" src="images/bunch1.png" alt="bunch1Right2" />
       <img class="topBunchRight2" src="images/topBunch.png" alt="topBunchRight2" />
-
+      <img class="leftMultiRight" src="images/leftMulti.png" alt="leftMultiRight" />
     </div>
     <div class="content-container">
       <div class="landingScreen">
@@ -95,11 +96,13 @@
           <img class="letterG" src="images/G.png" alt="letterG" />
         </div>
         <div class="chevron">
-        <i class="gg-chevron-down" onclick="scrollToWedding()"></i>
+          <a href="#wedding" >
+            <i class="gg-chevron-down" ></i>
+          </a>
         </div>
       </div>
       
-      <div class="wedding" id="wedding">
+      <section class="wedding" id="wedding">
         <h2>The Wedding</h2>
         <div class="title-section">
           <h3>September 6th - 8th 2024</h3>
@@ -122,9 +125,9 @@
             <p>Noon - BBQ</p>
           </div>
         </div>
-      </div>
+      </section>
       <img class="vineDivider" src="images/vineDivider.png" alt="vineDivider" />
-      <div class="getting-there" id="getting-there">
+      <section class="getting-there" id="getting-there">
           <h2>Getting There</h2>
           <div class="getting-there-text">
             <p>Château Saint-Michel is a 90 minute drive from Toulouse, with parking on site.</p>
@@ -132,20 +135,20 @@
             <p>Saint-Girons is a 10 minute drive, a small town with more options for accommodation and dinner.</p>
             <p>See below for the venue location, alongside some accommodation and dining recommendations.</p>
           </div>
-            <iframe class="map" src="https://www.google.com/maps/d/embed?mid=1VErDThy82rWlc5-WW3UVyZ_k6lv8Rj4&ehbc=2E312F&noprof=1" height="300px" width="100%"></iframe>
-      </div>
+            <iframe class="map" src="https://www.google.com/maps/d/embed?mid=1VErDThy82rWlc5-WW3UVyZ_k6lv8Rj4&ehbc=2E312F&noprof=1"></iframe>
+      </sec>
       <img class="vineDivider-2" src="images/vineDivider.png" alt="vineDivider" />
-      <div class="our-story" id="our-story">
+      <section class="our-story" id="our-story">
         <h2>Our Story</h2>
         <video controls width="80%" class="trailer" poster="images/poster.png">
-          <source src="video/trailer.mp4" type="video/mp4" />
+          <source src="video/trailer_low_quality.mp4" type="video/mp4" />
           <p>
             Your browser doesn't support this video.
           </p>
         </video>
-      </div>
+      </section>
       <img class="vineDivider" src="images/vineDivider.png" alt="vineDivider" />
-      <div class="FAQs" id="FAQs">
+      <section class="FAQs" id="FAQs">
         <h2>FAQs</h2>
         <div class="questions">
           <div class="q-and-a">
@@ -169,7 +172,7 @@
             <p>Unfortunately, you can’t bring a plus one unless it’s specifically indicated on your invite.</p>
           </div>
         </div>
-      </div>
+      </section>
     </div>
 
     <header class="header" id="header">
@@ -177,28 +180,28 @@
           <div class="nav__menu" id="nav-menu">
               <ul class="nav__list">
                   <li class="nav__item">
-                      <a href="#wedding" class="nav__link active-link" onclick="scrollToSectionById(`wedding`)">
+                      <a href="#wedding" class="nav__link active-link">
                           <i class='bx bx-party nav__icon'></i>
                           <span class="nav__name">The Wedding</span>
                       </a>
                   </li>
                   
                   <li class="nav__item">
-                      <a href="#getting-there" class="nav__link" onclick="scrollToSectionById(`getting-there`)">
+                      <a href="#getting-there" class="nav__link" >
                           <i class='bx bx-directions nav__icon'></i>
                           <span class="nav__name">Getting There</span>
                       </a>
                   </li>
 
                   <li class="nav__item">
-                      <a href="#our-story" class="nav__link" onclick="scrollToSectionById(`our-story`)">
+                      <a href="#our-story" class="nav__link" >
                           <i class='bx bx-camera-movie nav__icon'></i>
                           <span class="nav__name">Our Story</span>
                       </a>
                   </li>
 
                   <li class="nav__item">
-                      <a href="#FAQs" class="nav__link" onclick="scrollToSectionById(`FAQs`)">
+                      <a href="#FAQs" class="nav__link" >
                           <i class='bx bx-list-ol nav__icon'></i>
                           <span class="nav__name">FAQs</span>
                       </a>
@@ -209,7 +212,6 @@
       </nav>
   </header>
 
-  <div class="bottom-border"></div>    
     <script defer src="script.js"></script>
   </body>
 </html>
