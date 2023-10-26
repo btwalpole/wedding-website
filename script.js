@@ -2,6 +2,7 @@ window.addEventListener("scroll", reveal);
 window.onload = reveal();
 
 function reveal() {
+  console.log("running reveal function");
   const nav = document.querySelector("#nav-menu");
   var revealTop = wedding.getBoundingClientRect().top;
 

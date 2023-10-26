@@ -604,11 +604,12 @@ body {
 /* Center */
 
 .landingScreen {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 80px;
 }
 
 .lettersContainer {
@@ -616,7 +617,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 70px;
+    margin-top: 120px;
 }
 
 .letterB {
@@ -632,6 +633,17 @@ body {
 .ampersand {
     width: 40px;
     margin: 5px 0px;
+}
+
+
+@media screen and (max-width: 400px) {
+  .letterB, .letterG {
+    width: 120px;
+  }
+
+  .ampersand {
+    width: 30px;
+  }
 }
 
 @media screen and (min-width: 680px) {
@@ -940,22 +952,22 @@ ul {
     justify-content: space-between;
     align-items: center;
   }
-    .nav__menu {
-      position: fixed;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      background-color: var(--background-cream);
-      box-shadow: 0 -1px 6px hsla(174, 63%, 15%, 1);
-      width: 70%;
-      padding: 0;
-      /*display: grid;*/
-      opacity: 0;
-      align-content: center;
-      border-radius: 1.25rem 1.25rem 0 0;
-      z-index: 9999;
-      color: var(--green-dark);
-    }
+
+  .nav__menu {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--background-cream);
+    box-shadow: 0 -1px 6px hsla(174, 63%, 15%, 1);
+    width: 70%;
+    padding: 0;
+    opacity: 0;
+    align-content: center;
+    border-radius: 1.25rem 1.25rem 0 0;
+    z-index: 9999;
+    color: var(--green-dark);
+  }
 
   @media screen and (min-width: 767px) {
     .nav__menu {
