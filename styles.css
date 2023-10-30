@@ -8,24 +8,7 @@
     --green-100: #daf9d6;
     --background-cream: #fffffa;
     --ggs: 1.8;
-
-  scroll-behavior: smooth;
-
   }
-
-  /* THE TOP AND RIGHT BORDERS ARE WHATS CAUSING THE X OVERFLOW IN TEH BODYS 
-  I dont think its the scrooll bar because theres no issue with jiust left border
-  
-  its the top right bit of the top border
-  and all of the right hand border
-
-  anything that extends right is extending outside of the body
-  but not being hidden
-
-  SETTING RIGHT: 0PX SEEMS TO FIX EVERYTHING?? 
-
-  ->>> so i just need to clip all the images appropriately
-  **/
 
 /* * {
   background: #000 !important;
@@ -35,9 +18,10 @@
 
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 body {
-  background-color: var(----background-cream);
+  background-color: var(--background-cream);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -1009,6 +993,7 @@ p {
   height: 300px;
   width: 100%;
   margin-top: 20px;
+  z-index: -1;
 }
 
 /* Tablet Styles */
@@ -1064,7 +1049,7 @@ ul {
     left: 0;
     width: 100%;
     background-color: var(--background-cream);
-    z-index: var(--z-fixed);
+    z-index: 9999;
     transition: .4s;
     display: flex;
     justify-content: center;
@@ -1077,6 +1062,7 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 9999;
   }
 
   .nav__menu {
@@ -1104,7 +1090,6 @@ ul {
       display: none;
     }
   }
-  
 
   .nav-active {
     opacity: 1;
@@ -1136,6 +1121,7 @@ ul {
   .nav__list, 
   .nav__link {
     display: flex;
+    z-index: 9999;
   }
   
   .nav__link {
@@ -1149,13 +1135,9 @@ ul {
   .nav__list {
     justify-content: space-around;
     padding: 0;
+    z-index: 9999;
   }
-  
-  .nav__name {
-    font-size: var(--tiny-font-size);
-    /* display: none;*/ /* Minimalist design, hidden labels */
-  }
-  
+
   .nav__icon {
     font-size: 1.5rem;
   }
@@ -1164,24 +1146,6 @@ ul {
   .active-link, .nav__item:hover {
     color: var(--green-800);
   }
-
-  /* .active-link {
-    position: relative;
-    color: var(--green-700);
-    transition: .3s;
-  } */
-  
-  /* Minimalist design, active link */
-  /* .active-link::before{
-    content: '';
-    position: absolute;
-    bottom: -.5rem;
-    width: 4px;
-    height: 4px;
-    background-color: var(--first-color);
-    border-radius: 50%;
-  } */
-  
   /* Change background header */
   .scroll-header {
     box-shadow: 0 1px 12px hsla(var(--hue), var(--sat), 15%, 0.15);
@@ -1203,14 +1167,6 @@ ul {
       display: none;
     }
   }
-  
-  /* For medium devices *//*
-  @media screen and (min-width: 590px) {
-    .nav__list {
-      justify-content: center;
-      column-gap: 3rem;
-    }
-  }*/
   
   @media screen and (min-width: 767px) {
     .nav__list {
@@ -1244,25 +1200,6 @@ ul {
       font-size: var(--normal-font-size);
       /* display: block; */ /* Minimalist design, visible labels */
     }
-    .nav__link:hover {
-      color: var(--first-color);
-    }
-  
-    /* First design, remove if you choose the minimalist design */
-    .active-link::before {
-      content: '';
-      position: absolute;
-      bottom: -.75rem;
-      width: 4px;
-      height: 4px;
-      background-color: var(--first-color);
-      border-radius: 50%;
-    }
-  
-    /* Minimalist design */
-    /* .active-link::before{
-        bottom: -.75rem;
-    } */
   }
   
   /* For large devices */
