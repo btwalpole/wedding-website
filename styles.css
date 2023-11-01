@@ -1112,12 +1112,7 @@ ul {
     width: 32px;
     border-radius: 50%;
   }
-  
-  .nav__logo {
-    color: var(--title-color);
-    font-weight: 600;
-  }
-  
+
   .nav__list, 
   .nav__link {
     display: flex;
