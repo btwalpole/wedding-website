@@ -426,7 +426,7 @@ body {
   width: 60px;
   top: 2850px;
   left: 0px;
-  display: none;
+  display: block;
 }
 
 .bunch2-3 {
@@ -435,20 +435,45 @@ body {
   top: 3350px;
   left: 0px;
   transform: rotate(180deg);
-  display: none;
+  display: block;
 }
 .leftBunch3 {
   position: absolute;
   width: 60px;
   top: 3450px;
   left: 0px;
-  display: none;
+  display: block;
 }
 .bunch4Left3 {
   position: absolute;
   width: 60px;
   top: 3520px;
   left: 0px;
+  display: block;
+}
+
+.asset29 {
+  position: absolute;
+  width: 70px;
+  top: 3720px;
+  left: -9px;
+  display: block;
+}
+
+
+.asset31 {
+  position: absolute;
+  width: 70px;
+  top: 4120px;
+  left: -9px;
+  display: none;
+}
+
+.asset31-2 {
+  position: absolute;
+  width: 70px;
+  top: 4720px;
+  left: -9px;
   display: none;
 }
 /* .leftMulti3 {
@@ -460,11 +485,17 @@ body {
   display: none;
 } */
 
-@media screen and (min-width: 500px) {
-  .leftMulti2{
+ @media screen and (min-width: 400px) {
+  .asset31 {
     display: block;
   }  
 }
+  @media screen and (min-width: 400px) and (max-width: 800px){
+    .asset31-2{
+      display: block;
+    }  
+}
+/*
 
 @media screen and (min-width: 600px) {
   .bunch2-3, .leftBunch3  {
@@ -476,7 +507,7 @@ body {
   .bunch4Left3 {
     display: block;
   }
-}
+} */
 
 /* @media screen and (min-width: 1100px) {
   .leftMulti3 {
@@ -671,7 +702,7 @@ body {
   width: 90px;
   top: 2800px;
   right: 0px;
-  display: none;
+  display: block;
 }
 
 .leftMultiRight2 {
@@ -680,20 +711,22 @@ body {
   top: 3350px;
   right: 0px;
   transform: rotate(180deg);
-  display: none;
+  display: block;
 }
 
-@media screen and (min-width: 500px) {
+.asset30 {
+  position: absolute;
+  width: 50px;
+  top: 3760px;
+  right: -2px;
+  display: block;
+}
+
+/* @media screen and (min-width: 500px) {
   .rightMulti2 {
     display: block;
   }  
-}
-
-@media screen and (min-width: 1000px) {
-  .leftMultiRight2 {
-    display: block;
-  }  
-}
+} */
 
 /* Content */
 
@@ -839,7 +872,7 @@ body {
 /* All Content */
 
 h2, h3, h4, p, span {
-    font-family: 'Alegreya', 'serif';
+    font-family: 'Rosarivo', 'serif';
     margin: 0;
 }
 
@@ -863,9 +896,10 @@ p {
 
 .title-section h3 {
   font-family: 'Tangerine', serif;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 100;
   color: var(--green-dark);
+  text-align: center;
 }
 
 /* Tablet & Desktop text Styles */
@@ -887,7 +921,14 @@ p {
   }
 
   .title-section h3 {
-      font-size: 44px;
+      font-size: 40px;
+  }
+}
+
+/* Tablet & Desktop text Styles */
+@media only screen and (min-width: 601px) {
+  .title-section h3 {
+      font-size: 54px;
   }
 }
 
@@ -982,11 +1023,38 @@ p {
     justify-content: center;
     align-items: start;
     margin-top: 10px;
+    max-width: 70%;
 }
 
-.getting-there-text p {
+.getting-there-text  {
     padding: 6px 0;
     margin-bottom: 5px;
+}
+
+.getting-there-text  {
+  padding: 6px 0;
+  margin-bottom: 5px;
+}
+
+.getting-there-text  .p{
+  padding: 6px 0;
+  margin-bottom: 5px;
+}
+
+.getting-there-text  .options{
+  padding: 6px 0;
+  margin-bottom: 5px;
+}
+
+.notes {
+  padding: 0;
+}
+
+/* Mobile */
+@media only screen and (max-width: 560px) {
+  .getting-there-text {
+    max-width: 90%;
+    }
 }
 
 .map {
@@ -1027,10 +1095,18 @@ p {
 
 .questions {
     margin-top: 10px;
+    max-width: 70%;
+}
+
+/* Mobile */
+@media only screen and (max-width: 560px) {
+  .questions{
+    max-width: 90%;
+    }
 }
 
 .q-and-a {
-    padding: 8px 0;
+    padding: 12px 0;
 }
 /* Navigation */
 
