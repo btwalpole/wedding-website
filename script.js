@@ -1,6 +1,40 @@
 window.addEventListener("scroll", reveal);
 window.onload = reveal();
 
+const leftTop = document.getElementById("left-top");
+const rightTop = document.getElementById("right-top");
+
+window.onscroll = function () {
+  var scrollLimit = 100;
+
+  console.log("scrolling");
+  console.log(leftTop);
+  console.log("rightTop", rightTop);
+
+  if (window.scrollY >= scrollLimit) {
+    console.log("past scrollLimit");
+
+    if (
+      !leftTop.classList.contains("visible") &&
+      !rightTop.classList.contains("visible")
+    ) {
+      leftTop.classList.add("visible");
+      rightTop.classList.add("visible");
+    }
+  }
+  if (window.scrollY < scrollLimit) {
+    console.log("above scrollLimit");
+
+    if (
+      leftTop.classList.contains("visible") &&
+      leftTop.classList.contains("visible")
+    ) {
+      leftTop.classList.remove("visible");
+      rightTop.classList.remove("visible");
+    }
+  }
+};
+
 function reveal() {
   const nav = document.querySelector("#nav-menu");
   var revealTop = wedding.getBoundingClientRect().top;

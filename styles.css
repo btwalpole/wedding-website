@@ -271,6 +271,50 @@ body {
   }
 }
 
+/** Sticky borders*/
+
+.left-top {
+  position: fixed;
+  width: 40px;
+  top: 10px;
+  left: 0px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.left {
+  position: fixed;
+  width: 63px;
+  top: 150px;
+  left: 0px;
+  height: 80%;
+}
+
+.right-top {
+  position: fixed;
+  width: 35px;
+  right: 0px;
+  top: 3px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.right {
+  position: fixed;
+  width: 60px;
+  right: 0px;
+  top: 140px;
+  height: 80%;
+}
+
+.visible {
+  opacity: 1;
+}
+
+
+
+/** */
+
 .left-border {
     position: absolute;
     top: 150px;
@@ -291,11 +335,13 @@ body {
 }
 
 .leftMulti {
-    position: absolute;
+    position: fixed;
     width: 60px;
     top: 120px;
     left: 0px;
 }
+
+
 
 .leaf1 {
     position: absolute;
@@ -476,14 +522,7 @@ body {
   left: -9px;
   display: none;
 }
-/* .leftMulti3 {
-  position: absolute;
-  width: 60px;
-  top: 3700px;
-  left: 0px;
-  transform: scaleY(-1);
-  display: none;
-} */
+
 
  @media screen and (min-width: 400px) {
   .asset31 {
@@ -495,25 +534,6 @@ body {
       display: block;
     }  
 }
-/*
-
-@media screen and (min-width: 600px) {
-  .bunch2-3, .leftBunch3  {
-    display: block;
-  }  
-}
-
-@media screen and (min-width: 1100px) {
-  .bunch4Left3 {
-    display: block;
-  }
-} */
-
-/* @media screen and (min-width: 1100px) {
-  .leftMulti3 {
-    display: block;
-  }
-} */
 
 /* Right Border */
 
@@ -526,10 +546,12 @@ body {
 }
 
 .rightMulti {
-    position: absolute;
+    position: fixed;
     width: 100px;
     right: 0px;
 }
+
+
 
 .bunch4Right {
     position: absolute;
@@ -718,8 +740,43 @@ body {
   position: absolute;
   width: 50px;
   top: 3760px;
-  right: -2px;
-  display: block;
+  right: 0px;
+  display: none;
+}
+
+.asset30-2 {
+  position: absolute;
+  width: 65px;
+  top: 4280px;
+  right: 0px;
+  display: none;
+}
+
+.leftMultiRight3 {
+  position: absolute;
+  width: 50px;
+  top: 4880px;
+  right: 0px;
+  transform: rotate(180deg);
+  display: none;
+}
+
+@media screen and (max-width: 401px) {
+  .asset30 {
+    display: block;
+  }  
+}
+
+@media screen and (min-width: 401px) {
+  .asset30, .asset30-2, .leftMultiRight3 {
+    display: block;
+  }  
+}
+
+@media screen and (min-width: 420px) {
+   .leftMultiRight3 {
+    display: none;
+  }  
 }
 
 /* @media screen and (min-width: 500px) {
