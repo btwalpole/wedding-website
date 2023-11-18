@@ -1037,8 +1037,12 @@ p {
     margin-top: 10px;
 }
 
-.agenda h4, p {
+.agenda > h4, p {
     padding: 2px 0;
+  }
+  
+.agenda-p {
+  text-align: center;
 }
 
 .vineDivider {
