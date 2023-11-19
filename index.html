@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <title>Ben & Gemma</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="contentStyles.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/contentStyles.css" />
+    <link rel="stylesheet" href="styles/navStyles.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rosarivo:wght@100;200;300;400;500;600;700;800;900">
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/chevron-down.css' rel='stylesheet'>
@@ -58,7 +59,7 @@
         </div>
         <div class="chevron">
           <a href="#our-story" >
-            <i class="gg-chevron-down" id="chevron" ></i>
+            <i class="gg-chevron-down" id="chevron"></i>
           </a>
         </div>
       </div>
@@ -108,7 +109,7 @@
             <p class="options">Bus (approximately 3 hours). Please note:</p>
             <div>
               <p class="notes">- There is no direct bus route so you will have to change.</p>
-              <p class="notes">- You will need to use a local taxi company to get to the Château (see <a href="#FAQs" >FAQs</a>).</p>
+              <p class="notes">- You will need to use a local taxi company to get to the Château (see <a class="FAQs-link" href="#FAQs" >FAQs</a>).</p>
             </div>
           </div>
       </section>
@@ -160,47 +161,41 @@
           </div>
         </div>
       </section>
-
     </div>
-
-    <header class="header" id="header">
-      <nav class="nav container">
-          <div class="nav__menu" id="nav-menu">
-              <ul class="nav__list">
-                  <li class="nav__item">
-                    <li class="nav__item">
-                      <a href="#our-story" class="nav__link" >
-                          <i class='bx bx-camera-movie nav__icon'></i>
-                          <span class="nav__name">Our Story</span>
-                      </a>
-                  </li>
-                      <a href="#wedding" class="nav__link active-link">
-                          <i class='bx bx-party nav__icon'></i>
-                          <span class="nav__name">The Wedding</span>
-                      </a>
-                  </li>
-                  <li class="nav__item">
-                      <a href="#getting-there" class="nav__link" >
-                          <i class='bx bxs-plane-take-off nav__icon'></i>
-                          <span class="nav__name">Getting There</span>
-                      </a>
-                  </li>
-                  <li class="nav__item">
-                    <a href="#the-area" class="nav__link" >
-                        <i class='bx bx-map nav__icon'></i>
-                        <span class="nav__name">The Area</span>
-                    </a>
-                </li>
-                  <li class="nav__item">
-                      <a href="#FAQs" class="nav__link" >
-                          <i class='bx bx-question-mark nav__icon'></i>
-                          <span class="nav__name">FAQs</span>
-                      </a>
-                  </li>
-              </ul>
-          </div>
+    <nav >
+        <ul class="nav-list">
+            <li class="nav__item">
+                <a href="#our-story" class="nav-link">
+                    <i class='bx bx-camera-movie nav-icon'></i>
+                    <span class="nav-name">Our Story</span>
+                </a>
+            </li>
+            <li>
+                <a href="#wedding" class="nav-link">
+                    <i class='bx bx-party nav-icon'></i>
+                    <span class="nav-name">The Wedding</span>
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="#getting-there" class="nav-link" >
+                    <i class='bx bxs-plane-take-off nav-icon'></i>
+                    <span class="nav-name">Getting There</span>
+                </a>
+            </li>
+            <li class="nav__item">
+              <a href="#the-area" class="nav-link" >
+                  <i class='bx bx-map nav-icon'></i>
+                  <span class="nav-name">The Area</span>
+              </a>
+          </li>
+            <li class="nav__item">
+                <a href="#FAQs" class="nav-link" >
+                    <i class='bx bx-question-mark nav-icon'></i>
+                    <span class="nav-name">FAQs</span>
+                </a>
+            </li>
+        </ul>
       </nav>
-  </header>
 
     <script defer src="script.js"></script>
   </body>
