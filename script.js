@@ -1,5 +1,6 @@
 const leftTop = document.getElementById("left-top");
 const rightTop = document.getElementById("right-top");
+const navBar = document.querySelector("nav");
 
 window.onscroll = function () {
   var scrollLimit = 100;
@@ -20,6 +21,9 @@ window.onscroll = function () {
       leftTop.classList.remove("visible");
       rightTop.classList.remove("visible");
     }
+  }
+  if (!navBar.classList.contains("nav-active")) {
+    navBar.classList.add("nav-active");
   }
 };
 
