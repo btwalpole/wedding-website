@@ -47,10 +47,10 @@ navLinks.forEach((navLink) => {
   });
 });
 
-const chevron = document.getElementById("chevron");
-chevron.addEventListener("click", function () {
-  onClickLink("our-story");
-});
+// const chevron = document.getElementById("chevron");
+// chevron.addEventListener("click", function () {
+//   onClickLink("our-story");
+// });
 
 // window.addEventListener("scroll", reveal);
 // window.onload = reveal();
