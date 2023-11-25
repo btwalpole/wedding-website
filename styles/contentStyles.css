@@ -311,14 +311,12 @@ p {
   margin-bottom: 5px;
 }
 
-.getting-there-text  .p{
-  padding: 6px 0;
-  margin-bottom: 5px;
+.getting-there-text p{
+  margin: 10px 0px;
 }
 
-.getting-there-text  .options{
-  padding: 6px 0;
-  margin-bottom: 5px;
+.options {
+  padding-bottom: 0;
 }
 
 .notes {
@@ -387,6 +385,10 @@ p {
 
 .q-and-a {
     padding: 12px 0;
+}
+
+.q-and-a p {
+  margin: 10px 0;
 }
 /* Navigation */
 
