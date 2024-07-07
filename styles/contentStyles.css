@@ -259,6 +259,12 @@ p {
   text-align: center;
 }
 
+.dress-code {
+  font-style: italic;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
 .vineDivider {
   width: 150px;
   margin: 60px 0 40px 0;
@@ -389,6 +395,12 @@ p {
 
 .q-and-a p {
   margin: 10px 0;
+}
+
+.q-and-a .dayText {
+  color:  var(--green-700);
+  font-weight: bold;
+  font-size: 20px;
 }
 /* Navigation */
 
