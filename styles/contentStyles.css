@@ -261,8 +261,8 @@ p {
 
 .dress-code {
   font-style: italic;
-  font-size: 16px;
   margin-top: 5px;
+  text-align: center;
 }
 
 .vineDivider {
