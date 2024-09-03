@@ -370,7 +370,6 @@ p {
 }
 
 .FAQs {
-    margin-bottom: 80px;
     padding-top: 30px;
     display: flex;
     flex-direction: column;
@@ -400,8 +399,38 @@ p {
 .q-and-a .dayText {
   color:  var(--green-700);
   font-weight: bold;
-  font-size: 20px;
+  font-size: 24px;
 }
+
+/* Mobile */
+@media only screen and (max-width: 560px) {
+  .q-and-a .dayText{
+    font-size: 16px;
+    }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 561px) and (max-width: 960px) {
+  .q-and-a .dayText{
+    font-size: 20px;
+    }
+}
+
+.seating-plan {
+  margin-bottom: 180px;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.table {
+  margin: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* Navigation */
 
 ul {
